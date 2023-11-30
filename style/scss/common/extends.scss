@@ -1,0 +1,32 @@
+%default-transition{
+  transition: 0.3s;
+}
+
+%default-boarder-radius{
+  border-radius: $default-boarder-radius;
+}
+
+%bg-images{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+%height100{
+  height: 100%;
+}
+
+%terms{
+  form{
+    @extend .d-flex;
+    //display: flex;
+    max-width: 500px;
+    gap: 10px;
+
+    label{
+      color: $additional-font-color;
+      font-weight: $font-light;
+      font-size: $font-sm;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.header {
+  padding: 24px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: $header-height;
+
+  &__menu {
+    ul {
+      @extend %height100;
+      gap: 60px;
+    }
+
+    li:last-child {
+      a {
+        @extend %default-boarder-radius;
+        padding: 7px 19px 4px;
+        background-color: $accent-color;
+        border: 1px solid $accent-color;
+        text-transform: uppercase;
+        //@extend %default-transition;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+
+    a {
+      color: $additional-font-color;
+      font-size: $font-custom;
+    }
+  }
+}
+

@@ -1,0 +1,37 @@
+.banner{
+  @include bg-image('./../../assets/images/jpg/employee.jpg');
+  height: 100vh;
+  @extend %terms;
+  padding-top: $header-height;
+  .container{
+    @extend %height100;
+    &:after{
+      $height: 152;
+      content: '';
+      display: block;
+      //height: 70px;
+      width: 400px;
+      @include bg-image('./../../assets/images/svg/Dot ornament.svg');
+      position: absolute;
+      bottom: -($height / 2) + px;
+      height: 153px;
+      right: 30px;
+    }
+  }
+  &__content{
+    @extend %height100;
+  }
+
+  h1{
+    font-size: $font-xxl;
+    color: $additional-font-color;
+    font-weight: $font-medium;
+    width: 661px;
+    margin-bottom: 80px;
+  }
+  &__test{
+    margin-bottom: 20px;
+  }
+
+
+}
