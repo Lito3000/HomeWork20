@@ -377,8 +377,9 @@ a.blue:hover {
   .header {
     max-width: 767px;
   }
-  .header__br2 ul {
+  .header__br2 {
     flex-direction: column;
+    align-items: center;
   }
 }
 .footer {
