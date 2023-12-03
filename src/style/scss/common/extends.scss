@@ -1,0 +1,59 @@
+@use './../common/mixins' as mix;
+@use './../common/variables' as var;
+//@use './../../common/extends' as ext;
+%default-transition{
+  transition: 0.3s;
+}
+//экстенды нужны если нужно дублировать на все теги
+%default-boarder-radius{
+  border-radius: var.$default-boarder-radius;
+}
+
+%bg-images{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+%height100{
+  height: 100%;
+}
+
+%terms{
+  form{
+    @extend .d-flex;
+    //display: flex;
+    max-width: 500px;
+    gap: 10px;
+
+    label{
+      color: var.$additional-font-color;
+      font-weight: var.$font-light;
+      font-size: var.$font-md;
+    }
+  }
+}
+
+%font-size45{
+  font-size: 45px;
+  color: #000;
+  font-weight: 500;
+  width: 661px;
+  margin-bottom: 80px;
+}
+
+%card-capital{
+  flex: 1 1 14rem;
+  height: 299px;
+  background-color: var.$capital-background-color;
+  border-top-right-radius: 100px;
+  .capital__services{
+    padding: 30px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+

@@ -1,0 +1,596 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Bold.eot");
+  src: local("Poppins Bold"), local("Poppins-Bold"), url("../../assets/fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-Bold.woff2") format("woff2"), url("../../assets/fonts/Poppins-Bold.woff") format("woff"), url("../../assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-BlackItalic.eot");
+  src: local("Poppins Black Italic"), local("Poppins-BlackItalic"), url("../../assets/fonts/Poppins-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-BlackItalic.woff2") format("woff2"), url("../../assets/fonts/Poppins-BlackItalic.woff") format("woff"), url("../../assets/fonts/Poppins-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Black.eot");
+  src: local("Poppins Black"), local("Poppins-Black"), url("../../assets/fonts/Poppins-Black.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-Black.woff2") format("woff2"), url("../../assets/fonts/Poppins-Black.woff") format("woff"), url("../../assets/fonts/Poppins-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-BoldItalic.eot");
+  src: local("Poppins Bold Italic"), local("Poppins-BoldItalic"), url("../../assets/fonts/Poppins-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-BoldItalic.woff2") format("woff2"), url("../../assets/fonts/Poppins-BoldItalic.woff") format("woff"), url("../../assets/fonts/Poppins-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraBold.eot");
+  src: local("Poppins ExtraBold"), local("Poppins-ExtraBold"), url("../../assets/fonts/Poppins-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-ExtraBold.woff2") format("woff2"), url("../../assets/fonts/Poppins-ExtraBold.woff") format("woff"), url("../../assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraBoldItalic.eot");
+  src: local("Poppins ExtraBold Italic"), local("Poppins-ExtraBoldItalic"), url("../../assets/fonts/Poppins-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-ExtraBoldItalic.woff2") format("woff2"), url("../../assets/fonts/Poppins-ExtraBoldItalic.woff") format("woff"), url("/../../assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraLight.eot");
+  src: local("Poppins ExtraLight"), local("Poppins-ExtraLight"), url("../../assets/fonts/Poppins-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-ExtraLight.woff2") format("woff2"), url("../../assets/fonts/Poppins-ExtraLight.woff") format("woff"), url("../../assets/fonts/Poppins-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraLightItalic.eot");
+  src: local("Poppins ExtraLight Italic"), local("Poppins-ExtraLightItalic"), url("../../assets/fonts/Poppins-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-ExtraLightItalic.woff2") format("woff2"), url("../../assets/fonts/Poppins-ExtraLightItalic.woff") format("woff"), url("../../assets/fonts/Poppins-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Italic.eot");
+  src: local("Poppins Italic"), local("Poppins-Italic"), url("../../assets/fonts/Poppins-Italic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-Italic.woff2") format("woff2"), url("../../assets/fonts/Poppins-Italic.woff") format("woff"), url("../../assets/fonts/Poppins-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Light.eot");
+  src: local("Poppins Light"), local("Poppins-Light"), url("../../assets/fonts/Poppins-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-Light.woff2") format("woff2"), url("../../assets/fonts/Poppins-Light.woff") format("woff"), url("../../assets/fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-LightItalic.eot");
+  src: local("Poppins Light Italic"), local("Poppins-LightItalic"), url("../../assets/fonts/Poppins-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-LightItalic.woff2") format("woff2"), url("../../assets/fonts/Poppins-LightItalic.woff") format("woff"), url("../../assets/fonts/Poppins-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Medium.eot");
+  src: local("Poppins Medium"), local("Poppins-Medium"), url("../../assets/fonts/Poppins-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-Medium.woff2") format("woff2"), url("../../assets/fonts/Poppins-Medium.woff") format("woff"), url("../../assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-MediumItalic.eot");
+  src: local("Poppins Medium Italic"), local("Poppins-MediumItalic"), url("../../assets/fonts/Poppins-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-MediumItalic.woff2") format("woff2"), url("../../assets/fonts/Poppins-MediumItalic.woff") format("woff"), url("../../assets/fonts/Poppins-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Regular.eot");
+  src: local("Poppins Regular"), local("Poppins-Regular"), url("../../assets/fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-Regular.woff2") format("woff2"), url("../../assets/fonts/Poppins-Regular.woff") format("woff"), url("../../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-SemiBold.eot");
+  src: local("Poppins SemiBold"), local("Poppins-SemiBold"), url("../../assets/fonts/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-SemiBold.woff2") format("woff2"), url("../../assets/fonts/Poppins-SemiBold.woff") format("woff"), url("../../assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-SemiBoldItalic.eot");
+  src: local("Poppins SemiBold Italic"), local("Poppins-SemiBoldItalic"), url("../../assets/fonts/Poppins-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-SemiBoldItalic.woff2") format("woff2"), url("../../assets/fonts/Poppins-SemiBoldItalic.woff") format("woff"), url("../../assets/fonts/Poppins-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Thin.eot");
+  src: local("Poppins Thin"), local("Poppins-Thin"), url("../../assets/fonts/Poppins-Thin.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-Thin.woff2") format("woff2"), url("../../assets/fonts/Poppins-Thin.woff") format("woff"), url("../../assets/fonts/Poppins-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ThinItalic.eot");
+  src: local("Poppins Thin Italic"), local("Poppins-ThinItalic"), url("../../assets/fonts/Poppins-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Poppins-ThinItalic.woff2") format("woff2"), url("../../assets/fonts/Poppins-ThinItalic.woff") format("woff"), url("../../assets/fonts/Poppins-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul, ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+a {
+  transition: 0.3s;
+}
+
+.header__menu li:last-child a {
+  border-radius: 5px;
+}
+
+.banner:after, .banner {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner__content, .banner .container, .header__menu ul {
+  height: 100%;
+}
+
+.banner form {
+  max-width: 500px;
+  gap: 10px;
+}
+.banner form label {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.capital h1, .general h1 {
+  font-size: 45px;
+  color: #000;
+  font-weight: 500;
+  width: 661px;
+  margin-bottom: 80px;
+}
+
+.capital__ready {
+  flex: 1 1 14rem;
+  height: 299px;
+  background-color: white;
+  border-top-right-radius: 100px;
+}
+.capital__ready .capital__services {
+  padding: 30px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+body {
+  font-family: Poppins, "sans-serif";
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.d-flex, .banner form {
+  display: flex;
+}
+
+.justify-content-centre {
+  justify-content: center;
+}
+
+.align-items-centre {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 61px;
+  border: 2px solid #2eacf3;
+  color: #ffffff;
+  background-color: #2eacf3;
+  border-radius: 5px 27px;
+}
+.btn.policy a:hover {
+  color: #2eacf3;
+}
+
+.btn-banner:hover {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+.btn-capital:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+a.default:hover {
+  color: #2eacf3;
+}
+a.blue {
+  color: #2eacf3;
+}
+a.blue:hover {
+  color: #000;
+}
+
+.header {
+  padding: 24px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 85px;
+}
+.header__menu ul {
+  gap: 60px;
+}
+.header__menu li:last-child a {
+  padding: 7px 19px 4px;
+  background-color: #2eacf3;
+  border: 1px solid #2eacf3;
+  text-transform: uppercase;
+}
+.header__menu li:last-child a:hover {
+  background-color: transparent;
+}
+.header__menu a {
+  color: #ffffff;
+  font-size: 16px;
+}
+.header.text-dark .header__menu a {
+  color: black;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    max-width: 767px;
+  }
+  .header__br2 ul {
+    flex-direction: column;
+  }
+}
+.footer {
+  background-color: #646466;
+  font-family: Poppins, "sans-serif";
+  height: 358px;
+}
+.footer__menu {
+  gap: 30px;
+}
+.footer__left {
+  width: 50%;
+  height: 358px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.footer__left p {
+  color: rgba(243, 243, 249, 0.76);
+  font-weight: 300;
+}
+.footer__right {
+  width: 50%;
+  height: 358px;
+  display: flex;
+  justify-content: right;
+  gap: 30px;
+  align-items: center;
+}
+.footer__right p {
+  color: rgba(243, 243, 249, 0.76);
+  font-weight: 300;
+}
+.footer__email {
+  padding-top: 96px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__email a {
+  color: #2eacf3;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 767px;
+  }
+}
+.banner {
+  background-image: url("./../../assets/images/jpg/employee.jpg");
+  height: 100vh;
+  padding-top: 85px;
+}
+.banner:after {
+  content: "";
+  display: block;
+  width: 400px;
+  background-image: url("./../../assets/images/svg/Dot ornament.svg");
+  position: absolute;
+  bottom: 1738px;
+  height: 153px;
+  right: 30px;
+}
+.banner h1 {
+  font-size: 70px;
+  color: #ffffff;
+  font-weight: 500;
+  width: 51%;
+  margin-bottom: 80px;
+}
+.banner__test {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 767px;
+  }
+}
+.general {
+  padding-top: 150px;
+  max-height: 100vh;
+}
+.general__menu {
+  gap: 30px;
+}
+.general__info {
+  width: 35%;
+  gap: 27px;
+}
+.general__contact {
+  width: 20%;
+  gap: 20px;
+  font-size: 18px;
+  color: #000;
+  font-weight: 300;
+}
+.general__number {
+  width: 100px;
+}
+.general__li {
+  width: 127px;
+  padding: 0 0 15px 0;
+}
+.general__ul {
+  gap: 20px;
+}
+.general p {
+  font-size: 18px;
+  color: #000;
+  font-weight: 300;
+}
+.general li:after {
+  content: "";
+  display: block;
+  height: 2px;
+  flex-direction: column;
+  background-color: #6f6d6d;
+  width: 96%;
+}
+.general li:last-child:after {
+  content: "";
+  display: block;
+  height: 2px;
+  flex-direction: column;
+  background-color: #2eacf3;
+  width: 96%;
+}
+
+@media (max-width: 1200px) {
+  .general {
+    max-height: 1149px;
+  }
+  .general__container {
+    max-width: 767px;
+  }
+}
+.capital {
+  font-family: Poppins, "sans-serif";
+  background-color: #f3f3f9;
+  height: 869px;
+  padding-top: 100px;
+  margin-top: 60px;
+}
+.capital p {
+  font-size: 18px;
+}
+.capital__menu {
+  gap: 60px;
+}
+.capital__primary {
+  gap: 2.5em;
+}
+.capital__select {
+  gap: 30px;
+  justify-content: right;
+}
+.capital__select p {
+  width: 480px;
+}
+.capital__select p a {
+  color: #2eacf3;
+}
+.capital__select p a:hover {
+  color: #000;
+}
+.capital .blue {
+  color: #2eacf3;
+  font-size: 22px;
+  font-weight: 700;
+}
+.capital .blue a {
+  color: #000;
+}
+.capital .blue a:hover {
+  color: #2eacf3;
+}
+.capital .purple {
+  color: purple;
+  font-size: 22px;
+  font-weight: 700;
+}
+.capital .purple a {
+  color: #000;
+}
+.capital .purple a:hover {
+  color: #2eacf3;
+}
+.capital__services {
+  align-items: start;
+}
+.capital__services img {
+  width: 66px;
+  height: 66px;
+}
+.capital .card {
+  position: relative;
+}
+.capital .seven {
+  position: absolute;
+  width: 30px;
+  height: 34px;
+}
+
+@media (max-width: 1200px) {
+  .capital {
+    height: 1169px;
+  }
+  .capital__container {
+    max-width: 767px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

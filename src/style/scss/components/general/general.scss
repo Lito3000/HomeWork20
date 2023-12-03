@@ -1,0 +1,66 @@
+@use './../../common/mixins' as mix;
+@use './../../common/variables' as var;
+//@use './../../common/extends' as *;
+.general{
+  padding-top: 150px;
+  max-height: 100vh;
+  &__menu{
+    gap: 30px;
+  }
+
+  &__info{
+    width: 35%;
+    gap: 27px;
+  }
+
+  &__contact{
+    width: 20%;
+    gap: var.$general-gap;
+    font-size: var.$font-md;
+    color: var.$additional2-font-color;
+    font-weight: var.$font-light;
+  }
+
+  &__number{
+    width: 100px;
+  }
+
+  &__li{
+    width: 127px;
+    padding: 0 0 15px 0;
+  }
+
+  &__ul{
+    gap: var.$general-gap;
+  }
+
+  h1{
+    @extend %font-size45;
+  }
+
+  p{
+    font-size: var.$font-md;
+    color: var.$additional2-font-color;
+    font-weight: var.$font-light;
+  }
+  li{
+    &:after {
+      content: "";
+      display: block;
+      height: 2px;
+      flex-direction: column;
+      background-color: #6f6d6d;
+      width: 96%;
+    }
+  }
+  li:last-child {
+    &:after {
+      content: "";
+      display: block;
+      height: 2px;
+      flex-direction: column;
+      background-color: var.$accent-color;
+      width: 96%;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@use './../../common/mixins' as mix;
+@use './../../common/variables' as var;
+//@use './../../common/extends' as *;
+.footer{
+  background-color: #646466;
+  font-family: var.$main-font-family,  'sans-serif';
+  height: 358px;
+
+  &__menu{
+    gap: 30px;
+  }
+
+  &__left{
+    width: 50%;
+    height: 358px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    p{
+      color: rgba(243, 243, 249, 0.76);
+      font-weight: var.$font-light;
+    }
+  }
+
+  &__right{
+    width: 50%;
+    height: 358px;
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    align-items: center;
+    p{
+      color: rgba(243, 243, 249, 0.76);
+      font-weight: var.$font-light;
+    }
+  }
+  &__email{
+    padding-top: 96px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    a{
+      color: var.$accent-color ;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "homework20",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss-compile-HomePages": "sass --watch ./src/style/scss/pages/HomePages.scss:./src/style/css/style.css",
+    "scss-compile-PrivacyPolicy": "sass --watch ./src/style/scss/pages/PrivacyPolicy.scss:./src/style/css/PrivacyPolicy.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lito3000/HomeWork20.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lito3000/HomeWork20/issues"
+  },
+  "homepage": "https://github.com/Lito3000/HomeWork20#readme",
+  "devDependencies": {
+    "stylelint": "^15.11.0",
+    "stylelint-config-clean-order": "^5.2.0",
+    "stylelint-config-standard-scss": "^11.1.0"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}

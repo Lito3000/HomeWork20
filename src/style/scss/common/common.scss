@@ -1,0 +1,44 @@
+@use './../common/mixins' as mix;
+@use './../common/variables' as var;
+//@use './../../common/extends' as ext;
+body{
+  font-family: var.$main-font-family,  'sans-serif';
+  color: var.$main-font-color;
+  font-size: var.$font-md;
+  font-weight: var.$font-regular;
+  position: relative;
+  line-height: 1.2;
+}
+
+.container{
+  max-width: var.$container-width;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+.d-flex {
+  display: flex;
+}
+
+.justify-content-centre {
+  justify-content: center;
+}
+
+.align-items-centre {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-wrap-wrap{
+  flex-wrap: wrap;
+}
+
+
+
+

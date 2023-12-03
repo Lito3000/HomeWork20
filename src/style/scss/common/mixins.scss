@@ -1,0 +1,10 @@
+@mixin bg-image($img-url){
+  background-image: url($img-url);
+  @extend %bg-images;
+}
+
+@mixin sm-image($img-url-mixin){
+  background-image: url($img-url-mixin);
+  width: 66px;
+  height: 66px;
+}

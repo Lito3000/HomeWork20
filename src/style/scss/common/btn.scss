@@ -1,0 +1,103 @@
+@use './../common/mixins' as mix;
+@use './../common/variables' as var;
+//@use './../../common/extends' as ext;
+.btn {
+  padding: 14px 61px;
+  border: 2px solid var.$accent-color;
+  color: var.$additional-font-color;
+  background-color: var.$accent-color;
+  border-radius: var.$default-boarder-radius $big-boarder-radius;
+
+  &.policy a:hover {
+    color: var.$accent-color;
+  }
+}
+
+.btn-banner{
+  &:hover{
+    background-color: transparent;
+    border-color: var.$additional-font-color;
+  }
+}
+
+
+
+.btn-capital{
+  &:hover{
+    background-color: var.$main-font-color;
+    border-color: var.$additional-font-color;
+  }
+}
+
+a {
+  text-decoration: none;
+  @extend %default-transition;
+  display: inline-block;
+
+  &.default:hover {
+    color: var.$accent-color;
+  }
+
+  &.blue {
+    color: var.$accent-color;
+
+    &:hover {
+      color: var.$additional2-font-color;
+    }
+  }
+}
+
+//.btn{
+//  background: none;
+//  border: 2px solid black;
+//  padding: 10px 20px;
+//  text-transform: uppercase;
+//  color: black;
+//  font-size: 16px;
+//  font-weight: bold;
+//  cursor: pointer;
+//  border-radius: 10px;
+//
+//  &.btn__smSmall{
+//    font-size: 12px;
+//    padding: 5px 10px;
+//  }
+//
+//  &.btn__smMedium{
+//    font-size: 12px;
+//    padding: 10px 20px;
+//  }
+//  &.btn__smLarge{
+//    font-size: 12px;
+//    padding: 29px 25px;
+//  }
+//  &.btn__danger{
+//    background: red;
+//    border-color: #ab5668;
+//    color: white;
+//    &:hover{
+//      background: #722bff;
+//      border-color: #b700ff;
+//      transition: 0.3s;
+//      color: black;
+//    }
+//  }
+//
+//  &.btn__info{
+//    background: chocolate;
+//    border-color: #ab5668;
+//    color: white;
+//  }
+//
+//  .btn__success{
+//    background: darkviolet;
+//    border-color: #5664ab;
+//    color: white;
+//  }
+//  &:hover{
+//    background: cadetblue;
+//    border-color: chartreuse;
+//    transition: 0.3s;
+//    color: black;
+//  }
+//}
