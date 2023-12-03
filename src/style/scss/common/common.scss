@@ -39,6 +39,11 @@ body{
   flex-wrap: wrap;
 }
 
+@media (max-width: var.$container-width) {
+  .container{
+    max-width: 767px;
+  }
+}
 
 
 

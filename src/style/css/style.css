@@ -310,6 +310,11 @@ body {
   flex-wrap: wrap;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 767px;
+  }
+}
 .btn {
   padding: 14px 61px;
   border: 2px solid #2eacf3;
@@ -374,14 +379,12 @@ a.blue:hover {
 }
 
 @media (max-width: 1200px) {
-  .header {
-    max-width: 767px;
-  }
   .header__br2 {
     flex-direction: column;
     align-items: center;
   }
 }
+
 .footer {
   background-color: #646466;
   font-family: Poppins, "sans-serif";
@@ -424,11 +427,6 @@ a.blue:hover {
   color: #2eacf3;
 }
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 767px;
-  }
-}
 .banner {
   background-image: url("./../../assets/images/jpg/employee.jpg");
   height: 100vh;

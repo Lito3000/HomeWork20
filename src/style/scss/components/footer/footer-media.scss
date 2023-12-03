@@ -1,8 +1,3 @@
 @use './../../common/mixins' as mix;
 @use './../../common/variables' as var;
 //@use './../../common/extends' as *;
-@media (max-width: var.$container-width) {
-  .container{
-    max-width: 767px;
-  }
-}
