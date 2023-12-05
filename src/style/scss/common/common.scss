@@ -10,6 +10,49 @@ body{
   line-height: 1.2;
 }
 
+//body{
+//  &,.bg{
+//    background-color: darkorange;
+//  }
+//}
+//body{
+//  &.bg{
+//    background-color: #443b23;//задается класс двумя способами 1 способ с вложеностью
+//  }
+//}
+//
+//body,   .bg{
+//  background-color: #722bff;
+//}
+//
+//body.bg{
+//  background-color: #d91818;//задается класс двумя способами 2 способ без вложения
+//}
+
+//body{
+//  &__bg{
+//    background-color: #f5eb70;
+//  }
+//}
+
+//.main__first{
+//       &.main-bg{
+//  background-color: teal;
+//}
+//}
+//  .main__first.bg{
+//    background-color: blue;
+//  }
+//.main{
+//  &__first{
+//    background-color: chartreuse;//задается класс двумя способами 1 способ с вложеностью
+//  }
+//}
+//.main__first{
+//
+//  background-color: #722bff;//задается класс двумя способами 2 способ без вложености
+//}
+
 .container{
   max-width: var.$container-width;
   padding: 0 15px;
@@ -45,5 +88,9 @@ body{
   }
 }
 
+h1{
+  font-size: var.$font-xxl;
+  font-weight: var.$font-medium;
+}
 
 

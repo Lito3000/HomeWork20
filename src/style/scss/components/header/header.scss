@@ -1,43 +1,70 @@
 @use './../../common/mixins' as mix;
 @use './../../common/variables' as var;
 //@use './../../common/extends' as *;
-.header {
-  padding: 24px 0;
-  position: absolute;
-  //position: absolute тогда для тега боди надо написать position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-height: var.$header-height;
+body {
 
-  &__menu {
-    ul {
-      @extend %height100;
-      gap: 60px;
-    }
+    background-color: #fd0ddd; //задается класс двумя способами 2 способ без вложения
 
-    li:last-child {
-      a {
-        @extend %default-boarder-radius;
-        padding: 7px 19px 4px;
-        background-color: var.$accent-color;
-        border: 1px solid var.$accent-color;
-        text-transform: uppercase;
 
-        &:hover {
-          background-color: transparent;
+  .header {
+    padding: 24px 0;
+    position: absolute;
+    //position: absolute тогда для тега боди надо написать position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: var.$header-height;
+
+    &__menu {
+      ul {
+        @extend %height100;
+        gap: 60px;
+      }
+
+      li:last-child {
+        a {
+          @extend %default-boarder-radius;
+          padding: 7px 19px 4px;
+          background-color: rebeccapurple;
+          border: 1px solid var.$accent-color;
+          text-transform: uppercase;
+
+          &:hover {
+            background-color: transparent;
+          }
         }
+      }
+
+      a {
+        color: #f5eb70;
+        font-size: var.$font-custom;
       }
     }
 
-    a {
-      color: var.$additional-font-color;
-      font-size: var.$font-custom;
+    //&__menu a {
+    //  color: black;
+    //}
+
+    .black {
+      color: black;
+    }
+
+    .rrb {
+      color: #f570ac;
+
+      &:hover {
+        color: #13e7d0;
+        background-color: #443b23;
+      }
+    }
+
+    .policy {
+      color: chartreuse;
+
+      &:hover {
+        color: red;
+        //background-color: cornflowerblue;
+      }
     }
   }
-
-  &.text-dark &__menu a {
-    color: black;
-  }
 }
-

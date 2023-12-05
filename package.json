@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss-compile-HomePages": "sass --watch ./src/style/scss/pages/HomePages.scss:./src/style/css/style.css",
-    "scss-compile-PrivacyPolicy": "sass --watch ./src/style/scss/pages/PrivacyPolicy.scss:./src/style/css/PrivacyPolicy.css"
+    "scss-compile-all": "sass --watch ./src/style/scss/index.scss:./src/style/css/style.css",
+    "scss-compile-PrivacyPolicy": "sass --watch ./src/style/scss/PrivacyPolicy.scss:./src/style/css/PrivacyPolicy.css",
+    "scss-compile-HomePages": "sass --watch ./src/style/scss/HomePages.scss:./src/style/css/HomePages.css"
   },
   "repository": {
     "type": "git",

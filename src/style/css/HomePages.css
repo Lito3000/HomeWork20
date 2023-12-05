@@ -229,8 +229,46 @@ body .header__menu li:last-child a {
   border-radius: 5px;
 }
 
-body .header__menu ul {
+body .banner:after, body .banner {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .banner__content, body .banner .container, body .header__menu ul {
   height: 100%;
+}
+
+body .banner form {
+  max-width: 500px;
+  gap: 10px;
+}
+body .banner form label {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.capital h1, .general h1 {
+  font-size: 45px;
+  color: #000;
+  font-weight: 500;
+  width: 661px;
+  margin-bottom: 80px;
+}
+
+.capital__ready {
+  flex: 1 1 14rem;
+  height: 299px;
+  background-color: white;
+  border-top-right-radius: 100px;
+}
+.capital__ready .capital__services {
+  padding: 30px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 body {
@@ -252,7 +290,7 @@ body {
   flex-direction: column;
 }
 
-.d-flex {
+.d-flex, body .banner form {
   display: flex;
 }
 
@@ -425,20 +463,6 @@ body .header .policy:hover {
   color: red;
 }
 
-body {
-  background-color: darkorange;
-}
-body .main__first {
-  display: flex;
-  flex-direction: column;
-  height: 1050px;
-  justify-content: center;
-  gap: 40px;
-}
-body h1 {
-  color: #ab5668;
-}
-
 .footer {
   background-color: #646466;
   font-family: Poppins, "sans-serif";
@@ -520,4 +544,179 @@ body h1 {
   }
 }
 
-/*# sourceMappingURL=PrivacyPolicy.css.map */
+body .banner {
+  background-image: url("./../../assets/images/jpg/employee.jpg");
+  height: 100vh;
+  padding-top: 85px;
+}
+body .banner:after {
+  content: "";
+  display: block;
+  width: 400px;
+  background-image: url("./../../assets/images/svg/Dot ornament.svg");
+  position: absolute;
+  bottom: 1738px;
+  height: 153px;
+  right: 30px;
+}
+body .banner h1 {
+  max-width: 51%;
+  margin-bottom: 80px;
+  color: #ffffff;
+}
+body .banner__test {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 767px;
+  }
+}
+.general {
+  padding-top: 150px;
+  max-height: 100vh;
+}
+.general__menu {
+  gap: 30px;
+}
+.general__info {
+  width: 35%;
+  gap: 27px;
+}
+.general__contact {
+  width: 20%;
+  gap: 20px;
+  font-size: 18px;
+  color: #000;
+  font-weight: 300;
+}
+.general__number {
+  width: 100px;
+}
+.general__li {
+  width: 127px;
+  padding: 0 0 15px 0;
+}
+.general__ul {
+  gap: 20px;
+}
+.general p {
+  font-size: 18px;
+  color: #000;
+  font-weight: 300;
+}
+.general li:after {
+  content: "";
+  display: block;
+  height: 2px;
+  flex-direction: column;
+  background-color: #6f6d6d;
+  width: 96%;
+}
+.general li:last-child:after {
+  content: "";
+  display: block;
+  height: 2px;
+  flex-direction: column;
+  background-color: #2eacf3;
+  width: 96%;
+}
+
+@media (max-width: 1200px) {
+  .general {
+    max-height: 1149px;
+  }
+  .general__container {
+    max-width: 767px;
+  }
+}
+@media (max-width: 767px) {
+  .general {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.capital {
+  font-family: Poppins, "sans-serif";
+  background-color: #f3f3f9;
+  height: 869px;
+  padding-top: 100px;
+  margin-top: 60px;
+}
+.capital p {
+  font-size: 18px;
+}
+.capital__menu {
+  gap: 60px;
+}
+.capital__primary {
+  gap: 2.5em;
+}
+.capital__select {
+  gap: 30px;
+  justify-content: right;
+}
+.capital__select p {
+  width: 480px;
+}
+.capital__select p a {
+  color: #2eacf3;
+}
+.capital__select p a:hover {
+  color: #000;
+}
+.capital .blue {
+  color: #2eacf3;
+  font-size: 22px;
+  font-weight: 700;
+}
+.capital .blue a {
+  color: #000;
+}
+.capital .blue a:hover {
+  color: #2eacf3;
+}
+.capital .purple {
+  color: purple;
+  font-size: 22px;
+  font-weight: 700;
+}
+.capital .purple a {
+  color: #000;
+}
+.capital .purple a:hover {
+  color: #2eacf3;
+}
+.capital__services {
+  align-items: start;
+}
+.capital__services img {
+  width: 66px;
+  height: 66px;
+}
+.capital .card {
+  position: relative;
+}
+.capital .seven {
+  position: absolute;
+  width: 30px;
+  height: 34px;
+}
+
+@media (max-width: 1200px) {
+  .capital {
+    height: 1169px;
+  }
+  .capital__container {
+    max-width: 767px;
+  }
+}
+@media (max-width: 1200px) and (max-width: 767px) {
+  .capital {
+    height: 1146px;
+  }
+}
+
+/*# sourceMappingURL=HomePages.css.map */

@@ -1,39 +1,43 @@
 @use './../../common/mixins' as mix;
 @use './../../common/variables' as var;
 //@use './../../common/extends' as *;
-.banner{
-  @include mix.bg-image('./../../assets/images/jpg/employee.jpg');
-  height: 100vh;
-  //100vh чтоб он был на всю высоту вьюпорта
-  @extend  %terms;
-  padding-top: var.$header-height;
+body {
 
-  &:after{
-    content: '';
-    display: block;
-    width: 400px;
-    @include mix.bg-image('./../../assets/images/svg/Dot ornament.svg');
-    position: absolute;
-    bottom: 1738px;
-    height: 153px;
-    right: 30px;
-  }
 
-  .container{
-    @extend %height100;
-  }
-  &__content{
-    @extend %height100;
-  }
+  .banner {
+    @include mix.bg-image('./../../assets/images/jpg/employee.jpg');
+    height: 100vh;
+    //100vh чтоб он был на всю высоту вьюпорта
+    @extend %terms;
+    padding-top: var.$header-height;
 
-  h1{
-    font-size: var.$font-xxl;
-    color: var.$additional-font-color;
-    font-weight: var.$font-medium;
-    width: 51%;
-    margin-bottom: 80px;
-  }
-  &__test{
-    margin-bottom: 20px;
+    &:after {
+      content: '';
+      display: block;
+      width: 400px;
+      @include mix.bg-image('./../../assets/images/svg/Dot ornament.svg');
+      position: absolute;
+      bottom: 1738px;
+      height: 153px;
+      right: 30px;
+    }
+
+    .container {
+      @extend %height100;
+    }
+
+    &__content {
+      @extend %height100;
+    }
+
+    h1 {
+      max-width: 51%;
+      margin-bottom: 80px;
+      color: var.$additional-font-color;
+    }
+
+    &__test {
+      margin-bottom: 20px;
+    }
   }
 }

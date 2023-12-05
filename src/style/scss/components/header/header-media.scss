@@ -3,7 +3,6 @@
 //@use './../../common/extends' as *;
 .header {
 @media (max-width: var.$container-width) {
-
     &__br2 {
       flex-direction: column;
       align-items: center;
