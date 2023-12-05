@@ -331,7 +331,11 @@ a.blue:hover {
   padding: 5px 10px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
+  .header {
+    max-width: 767px;
+    display: flex;
+  }
   .header__br2 {
     flex-direction: column;
     align-items: center;

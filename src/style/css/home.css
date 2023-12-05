@@ -369,7 +369,11 @@ a.blue:hover {
   padding: 5px 10px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
+  .header {
+    max-width: 767px;
+    display: flex;
+  }
   .header__br2 {
     flex-direction: column;
     align-items: center;
@@ -522,11 +526,23 @@ a.blue:hover {
   margin-bottom: 20px;
 }
 
-@media (max-width: 1200px) {
-  .container {
+@media (max-width: 767px) {
+  .banner {
     max-width: 767px;
   }
+  .banner__content {
+    display: flex;
+    flex-direction: column;
+    font-size: 50%;
+  }
+  .banner h1 {
+    max-width: 51%;
+    margin-bottom: 80px;
+    color: #ffffff;
+    font-size: 44px;
+  }
 }
+
 .general {
   padding-top: 150px;
   padding-bottom: 150px;
@@ -577,18 +593,15 @@ a.blue:hover {
   width: 96%;
 }
 
-@media (max-width: 1200px) {
-  .general {
-    max-height: 1149px;
-  }
-  .general__container {
-    max-width: 767px;
-  }
-}
 @media (max-width: 767px) {
   .general {
+    max-width: 767px;
+    display: flex;
+  }
+  .general__menu {
+    gap: 30px;
+    display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -663,17 +676,10 @@ a.blue:hover {
   height: 34px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
   .capital {
-    height: 1169px;
-  }
-  .capital__container {
     max-width: 767px;
-  }
-}
-@media (max-width: 1200px) and (max-width: 767px) {
-  .capital {
-    height: 1146px;
+    max-height: 1369px;
   }
 }
 

@@ -1,8 +1,21 @@
 @use './../../common/mixins' as mix;
 @use './../../common/variables' as var;
 //@use './../../common/extends' as *;
-@media (max-width: var.$container-width) {
-  .container{
+.banner {
+
+  @media (max-width: var.$br2) {
     max-width: 767px;
-  }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      font-size: 50%;
+    }
+      h1 {
+        max-width: 51%;
+        margin-bottom: 80px;
+        color: #ffffff;
+        font-size: 44px;
+      }
+    }
+
 }

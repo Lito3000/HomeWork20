@@ -1,14 +1,11 @@
 @use './../../common/mixins' as mix;
 @use './../../common/variables' as var;
 //@use './../../common/extends' as *;
-.capital{
-@media (max-width: var.$container-width) {
-    height: 1169px;
-    &__container{
-      max-width: 767px;
-    }
+.capital {
+
   @media (max-width: var.$br2) {
-height: 1146px;
+    max-width: 767px;
+    max-height: 1369px;
   }
-  }
-  }
+}
+
