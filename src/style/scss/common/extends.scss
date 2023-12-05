@@ -4,7 +4,6 @@
 %default-transition{
   transition: 0.3s;
 }
-//экстенды нужны если нужно дублировать на все теги
 %default-boarder-radius{
   border-radius: var.$default-boarder-radius;
 }

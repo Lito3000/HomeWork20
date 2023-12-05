@@ -1,70 +1,62 @@
 @use './../../common/mixins' as mix;
 @use './../../common/variables' as var;
 //@use './../../common/extends' as *;
-body {
 
-    background-color: #fd0ddd; //задается класс двумя способами 2 способ без вложения
+.header {
+  padding: 24px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: var.$header-height;
 
+  &__menu {
+    ul {
+      @extend %height100;
+      gap: 60px;
+    }
 
-  .header {
-    padding: 24px 0;
-    position: absolute;
-    //position: absolute тогда для тега боди надо написать position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-height: var.$header-height;
+    li:last-child {
+      a {
+        @extend %default-boarder-radius;
+        padding: 7px 19px 4px;
+        background-color: var.$accent-color;
+        border: 1px solid var.$accent-color;
+        text-transform: uppercase;
+        color: var.$capital-background-color;
 
-    &__menu {
-      ul {
-        @extend %height100;
-        gap: 60px;
-      }
-
-      li:last-child {
-        a {
-          @extend %default-boarder-radius;
-          padding: 7px 19px 4px;
-          background-color: rebeccapurple;
-          border: 1px solid var.$accent-color;
-          text-transform: uppercase;
-
-          &:hover {
-            background-color: transparent;
-          }
+        &:hover {
+          background-color: transparent;
+          color: var.$capital-background-color;
         }
       }
-
-      a {
-        color: #f5eb70;
-        font-size: var.$font-custom;
-      }
     }
 
-    //&__menu a {
-    //  color: black;
-    //}
-
-    .black {
-      color: black;
+    a {
+      color: var.$accent-color;
+      font-size: var.$font-custom;
     }
+  }
 
-    .rrb {
-      color: #f570ac;
+  .black {
+    color: black;
+  }
 
-      &:hover {
-        color: #13e7d0;
-        background-color: #443b23;
-      }
+  .rrb {
+    color: #f570ac;
+
+    &:hover {
+      color: #13e7d0;
     }
+  }
 
-    .policy {
-      color: chartreuse;
+  .policy {
+    color: chartreuse;
 
-      &:hover {
-        color: red;
-        //background-color: cornflowerblue;
-      }
+    &:hover {
+      color: red;
+
     }
   }
 }
+

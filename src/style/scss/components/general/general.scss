@@ -1,19 +1,21 @@
 @use './../../common/mixins' as mix;
 @use './../../common/variables' as var;
 //@use './../../common/extends' as *;
-.general{
+
+.general {
   padding-top: 150px;
-  max-height: 100vh;
-  &__menu{
+  padding-bottom: 150px;
+
+  &__menu {
     gap: 30px;
   }
 
-  &__info{
+  &__info {
     width: 35%;
     gap: 27px;
   }
 
-  &__contact{
+  &__contact {
     width: 20%;
     gap: var.$general-gap;
     font-size: var.$font-md;
@@ -21,29 +23,30 @@
     font-weight: var.$font-light;
   }
 
-  &__number{
+  &__number {
     width: 100px;
   }
 
-  &__li{
+  &__li {
     width: 127px;
     padding: 0 0 15px 0;
   }
 
-  &__ul{
+  &__ul {
     gap: var.$general-gap;
   }
 
-  h1{
+  h1 {
     @extend %font-size45;
   }
 
-  p{
+  p {
     font-size: var.$font-md;
     color: var.$additional2-font-color;
     font-weight: var.$font-light;
   }
-  li{
+
+  li {
     &:after {
       content: "";
       display: block;
@@ -53,6 +56,7 @@
       width: 96%;
     }
   }
+
   li:last-child {
     &:after {
       content: "";

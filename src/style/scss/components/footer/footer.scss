@@ -1,47 +1,51 @@
 @use './../../common/mixins' as mix;
 @use './../../common/variables' as var;
 //@use './../../common/extends' as *;
-.footer{
+
+.footer {
   background-color: #646466;
-  font-family: var.$main-font-family,  'sans-serif';
+  font-family: var.$main-font-family, 'sans-serif';
   height: 358px;
 
-  &__menu{
+  &__menu {
     gap: 30px;
+    padding-top: 60px;
   }
 
-  &__left{
+  &__left {
     width: 50%;
-    height: 358px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    p{
+
+    p {
       color: rgba(243, 243, 249, 0.76);
       font-weight: var.$font-light;
     }
   }
 
-  &__right{
+  &__right {
     width: 50%;
-    height: 358px;
     display: flex;
     justify-content: right;
     gap: 30px;
     align-items: center;
-    p{
+
+    p {
       color: rgba(243, 243, 249, 0.76);
       font-weight: var.$font-light;
     }
   }
-  &__email{
+
+  &__email {
     padding-top: 96px;
     gap: 5px;
     display: flex;
     flex-direction: column;
-    a{
-      color: var.$accent-color ;
+
+    a {
+      color: var.$accent-color;
     }
   }
 }

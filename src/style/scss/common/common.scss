@@ -1,6 +1,7 @@
 @use './../common/mixins' as mix;
 @use './../common/variables' as var;
 //@use './../../common/extends' as ext;
+
 body{
   font-family: var.$main-font-family,  'sans-serif';
   color: var.$main-font-color;
@@ -10,49 +11,9 @@ body{
   line-height: 1.2;
 }
 
-//body{
-//  &,.bg{
-//    background-color: darkorange;
-//  }
-//}
-//body{
-//  &.bg{
-//    background-color: #443b23;//задается класс двумя способами 1 способ с вложеностью
-//  }
-//}
-//
-//body,   .bg{
-//  background-color: #722bff;
-//}
-//
-//body.bg{
-//  background-color: #d91818;//задается класс двумя способами 2 способ без вложения
-//}
-
-//body{
-//  &__bg{
-//    background-color: #f5eb70;
-//  }
-//}
-
-//.main__first{
-//       &.main-bg{
-//  background-color: teal;
-//}
-//}
-//  .main__first.bg{
-//    background-color: blue;
-//  }
-//.main{
-//  &__first{
-//    background-color: chartreuse;//задается класс двумя способами 1 способ с вложеностью
-//  }
-//}
-//.main__first{
-//
-//  background-color: #722bff;//задается класс двумя способами 2 способ без вложености
-//}
-
+body.background{
+  background-color: var.$capital-background-color;
+}
 .container{
   max-width: var.$container-width;
   padding: 0 15px;
@@ -91,6 +52,65 @@ body{
 h1{
   font-size: var.$font-xxl;
   font-weight: var.$font-medium;
+}
+
+.btn {
+  padding: 14px 61px;
+  border: 2px solid var.$accent-color;
+  color: var.$additional-font-color;
+  background-color: var.$accent-color;
+  border-radius: var.$default-boarder-radius $big-boarder-radius;
+
+}
+
+.btn-policy {
+  &:hover{
+    background-color: royalblue;
+  }
+}
+
+.btn-banner{
+  &:hover{
+    background-color: transparent;
+    border-color: var.$additional-font-color;
+  }
+}
+
+
+.btn-capital{
+  &:hover{
+    background-color: var.$main-font-color;
+    border-color: var.$additional-font-color;
+  }
+}
+
+a {
+  text-decoration: none;
+  @extend %default-transition;
+  display: inline-block;
+
+  &.default:hover {
+    color: var.$capital-background-color;
+  }
+
+  &.blue {
+    color: var.$accent-color;
+
+    &:hover {
+      color: var.$additional2-font-color;
+    }
+  }
+}
+.colorsize{
+  background-color: #6ad25d;
+}
+.btn__smSmall{
+  font-size: 42px;
+  padding: 5px 10px;
+}
+
+button {
+  @extend %default-transition;
 }
 
 

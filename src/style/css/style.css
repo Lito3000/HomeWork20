@@ -221,7 +221,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
-a {
+button, a {
   transition: 0.3s;
 }
 
@@ -249,7 +249,7 @@ a {
   font-size: 18px;
 }
 
-.capital h1, .general h1 {
+.general h1 {
   font-size: 45px;
   color: #000;
   font-weight: 500;
@@ -278,6 +278,10 @@ body {
   font-weight: 400;
   position: relative;
   line-height: 1.2;
+}
+
+body.background {
+  background-color: white;
 }
 
 .container {
@@ -315,6 +319,11 @@ body {
     max-width: 767px;
   }
 }
+h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
+
 .btn {
   padding: 14px 61px;
   border: 2px solid #2eacf3;
@@ -342,13 +351,22 @@ a {
   display: inline-block;
 }
 a.default:hover {
-  color: gold;
+  color: white;
 }
 a.blue {
   color: #2eacf3;
 }
 a.blue:hover {
   color: #000;
+}
+
+.colorsize {
+  background-color: #6ad25d;
+}
+
+.btn__smSmall {
+  font-size: 42px;
+  padding: 5px 10px;
 }
 
 @media (max-width: 1200px) {
@@ -371,15 +389,17 @@ a.blue:hover {
 }
 .header__menu li:last-child a {
   padding: 7px 19px 4px;
-  background-color: rebeccapurple;
+  background-color: #2eacf3;
   border: 1px solid #2eacf3;
   text-transform: uppercase;
+  color: white;
 }
 .header__menu li:last-child a:hover {
   background-color: transparent;
+  color: white;
 }
 .header__menu a {
-  color: #f5eb70;
+  color: #2eacf3;
   font-size: 16px;
 }
 .header .black {
@@ -390,7 +410,6 @@ a.blue:hover {
 }
 .header .rrb:hover {
   color: #13e7d0;
-  background-color: #443b23;
 }
 .header .policy {
   color: chartreuse;
@@ -406,10 +425,10 @@ a.blue:hover {
 }
 .footer__menu {
   gap: 30px;
+  padding-top: 60px;
 }
 .footer__left {
   width: 50%;
-  height: 358px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -421,7 +440,6 @@ a.blue:hover {
 }
 .footer__right {
   width: 50%;
-  height: 358px;
   display: flex;
   justify-content: right;
   gap: 30px;
@@ -481,26 +499,24 @@ a.blue:hover {
 }
 
 .banner {
-  background-image: url("./../../assets/images/jpg/employee.jpg");
+  background-image: url("./../../assets/images/jpg/employee_55.jpg");
   height: 100vh;
   padding-top: 85px;
 }
 .banner:after {
   content: "";
   display: block;
-  width: 400px;
-  background-image: url("./../../assets/images/svg/Dot ornament.svg");
+  background-image: url("./../../assets/images/svg/dot_ornament.svg");
   position: absolute;
-  bottom: 1738px;
-  height: 153px;
-  right: 30px;
+  height: 140px;
+  width: 367px;
+  right: 38px;
+  top: 706px;
 }
 .banner h1 {
-  font-size: 70px;
-  color: #ffffff;
-  font-weight: 500;
-  width: 51%;
+  max-width: 51%;
   margin-bottom: 80px;
+  color: #ffffff;
 }
 .banner__test {
   margin-bottom: 20px;
@@ -513,7 +529,7 @@ a.blue:hover {
 }
 .general {
   padding-top: 150px;
-  max-height: 100vh;
+  padding-bottom: 150px;
 }
 .general__menu {
   gap: 30px;
@@ -579,9 +595,13 @@ a.blue:hover {
 .capital {
   font-family: Poppins, "sans-serif";
   background-color: #f3f3f9;
-  height: 869px;
-  padding-top: 100px;
-  margin-top: 60px;
+  padding-bottom: 80px;
+}
+.capital h1 {
+  font-size: 45px;
+  color: #000;
+  font-weight: 500;
+  padding-top: 60px;
 }
 .capital p {
   font-size: 18px;
@@ -657,16 +677,16 @@ a.blue:hover {
   }
 }
 
-body {
-  background-color: #f3f3f9;
-}
-
 .main__first {
   display: flex;
   flex-direction: column;
   height: 1050px;
   justify-content: center;
   gap: 40px;
+}
+
+h1 {
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */

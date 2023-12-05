@@ -1,25 +1,23 @@
 @use './../../common/mixins' as mix;
 @use './../../common/variables' as var;
 //@use './../../common/extends' as *;
-body {
-
 
   .banner {
-    @include mix.bg-image('./../../assets/images/jpg/employee.jpg');
+    @include mix.bg-image('./../../assets/images/jpg/employee_55.jpg');
     height: 100vh;
-    //100vh чтоб он был на всю высоту вьюпорта
     @extend %terms;
     padding-top: var.$header-height;
 
     &:after {
       content: '';
       display: block;
-      width: 400px;
-      @include mix.bg-image('./../../assets/images/svg/Dot ornament.svg');
+
+      @include mix.bg-image('./../../assets/images/svg/dot_ornament.svg');
       position: absolute;
-      bottom: 1738px;
-      height: 153px;
-      right: 30px;
+      height: 140px;
+      width: 367px;
+      right: 38px;
+      top:706px;
     }
 
     .container {
@@ -40,4 +38,3 @@ body {
       margin-bottom: 20px;
     }
   }
-}

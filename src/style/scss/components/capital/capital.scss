@@ -1,70 +1,67 @@
 @use './../../common/mixins' as mix;
 @use './../../common/variables' as var;
 //@use './../../common/extends' as ext;
-.capital{
-  font-family: var.$main-font-family,  'sans-serif';
+
+.capital {
+  font-family: var.$main-font-family, 'sans-serif';
   background-color: #f3f3f9;
-  height: 869px;
-  padding-top: 100px;
-  margin-top: 60px;
+  padding-bottom: 80px;
 
   h1 {
-    @extend %font-size45;
+    font-size: 45px;
+    color: #000;
+    font-weight: 500;
+    padding-top: 60px;
   }
 
-  p{
+  p {
     font-size: var.$font-md;
   }
-  &__menu{
+
+  &__menu {
     gap: 60px;
   }
 
-  &__primary{
+  &__primary {
     gap: 2.5em;
   }
-  &__select{
+
+  &__select {
     gap: 30px;
     justify-content: right;
-    p{
+
+    p {
       width: 480px;
-      a{
+
+      a {
         color: var.$accent-color;
+
         &:hover {
           color: var.$additional2-font-color;
         }
       }
     }
-
-
   }
 
   &__ready {
     @extend %card-capital
   }
 
-  //&__pictures1{
-  //  @include sm-image ('./../../assets/images/png/Rectangle 842.png');
-  //}
-  //
-  //&__pictures2{
-  //  @include sm-image ('./../../assets/images/png/Rectangle 844.png');
-  //}
-  //
-  //&__pictures3{
-  //  @include sm-image ('./../../assets/images/png/Rectangle 846.png');
-  //}
-
   .blue {
     color: var.$accent-color;
     font-size: var.$font-lg;
     font-weight: var.$font-bold;
+
     a {
       color: var.$additional2-font-color;
+
+
       &:hover {
         color: var.$accent-color;
       }
     }
   }
+
   .purple {
     color: var.$purple-capital;
     font-size: var.$font-lg;
@@ -72,22 +69,27 @@
 
     a {
       color: var.$additional2-font-color;
+
       &:hover {
         color: var.$accent-color;
       }
     }
   }
-  &__services{
+
+  &__services {
     align-items: start;
-    img{
+
+    img {
       width: 66px;
       height: 66px;
     }
   }
+
   .card {
     position: relative;
   }
-  .seven{
+
+  .seven {
     position: absolute;
     width: 30px;
     height: 34px;

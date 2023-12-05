@@ -221,15 +221,15 @@ select {
     scroll-behavior: auto !important;
   }
 }
-a {
+button, a {
   transition: 0.3s;
 }
 
-body .header__menu li:last-child a {
+.header__menu li:last-child a {
   border-radius: 5px;
 }
 
-body .header__menu ul {
+.header__menu ul {
   height: 100%;
 }
 
@@ -240,6 +240,10 @@ body {
   font-weight: 400;
   position: relative;
   line-height: 1.2;
+}
+
+body.background {
+  background-color: white;
 }
 
 .container {
@@ -309,7 +313,7 @@ a {
   display: inline-block;
 }
 a.default:hover {
-  color: gold;
+  color: white;
 }
 a.blue {
   color: #2eacf3;
@@ -327,53 +331,6 @@ a.blue:hover {
   padding: 5px 10px;
 }
 
-.btn {
-  background: none;
-  border: 2px solid black;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  color: blue;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 10px;
-}
-.btn.btn__smMedium {
-  font-size: 12px;
-  padding: 10px 20px;
-}
-.btn.btn__smLarge {
-  font-size: 12px;
-  padding: 29px 25px;
-}
-.btn.btn__danger {
-  background: red;
-  border-color: #ab5668;
-  color: white;
-}
-.btn.btn__danger:hover {
-  background: #722bff;
-  border-color: #b700ff;
-  transition: 0.3s;
-  color: black;
-}
-.btn.info {
-  background: chocolate;
-  border-color: #ab5668;
-  color: white;
-}
-.btn .btn__success {
-  background: darkviolet;
-  border-color: #5664ab;
-  color: white;
-}
-.btn:hover {
-  background: cadetblue;
-  border-color: chartreuse;
-  transition: 0.3s;
-  color: black;
-}
-
 @media (max-width: 1200px) {
   .header__br2 {
     flex-direction: column;
@@ -381,10 +338,7 @@ a.blue:hover {
   }
 }
 
-body {
-  background-color: #fd0ddd;
-}
-body .header {
+.header {
   padding: 24px 0;
   position: absolute;
   top: 0;
@@ -392,51 +346,50 @@ body .header {
   width: 100%;
   max-height: 85px;
 }
-body .header__menu ul {
+.header__menu ul {
   gap: 60px;
 }
-body .header__menu li:last-child a {
+.header__menu li:last-child a {
   padding: 7px 19px 4px;
-  background-color: rebeccapurple;
+  background-color: #2eacf3;
   border: 1px solid #2eacf3;
   text-transform: uppercase;
+  color: white;
 }
-body .header__menu li:last-child a:hover {
+.header__menu li:last-child a:hover {
   background-color: transparent;
+  color: white;
 }
-body .header__menu a {
-  color: #f5eb70;
+.header__menu a {
+  color: #2eacf3;
   font-size: 16px;
 }
-body .header .black {
+.header .black {
   color: black;
 }
-body .header .rrb {
+.header .rrb {
   color: #f570ac;
 }
-body .header .rrb:hover {
+.header .rrb:hover {
   color: #13e7d0;
-  background-color: #443b23;
 }
-body .header .policy {
+.header .policy {
   color: chartreuse;
 }
-body .header .policy:hover {
+.header .policy:hover {
   color: red;
 }
 
-body {
-  background-color: darkorange;
-}
-body .main__first {
+.main__first {
   display: flex;
   flex-direction: column;
   height: 1050px;
   justify-content: center;
   gap: 40px;
 }
-body h1 {
-  color: #ab5668;
+
+h1 {
+  color: #000;
 }
 
 .footer {
@@ -446,10 +399,10 @@ body h1 {
 }
 .footer__menu {
   gap: 30px;
+  padding-top: 60px;
 }
 .footer__left {
   width: 50%;
-  height: 358px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -461,7 +414,6 @@ body h1 {
 }
 .footer__right {
   width: 50%;
-  height: 358px;
   display: flex;
   justify-content: right;
   gap: 30px;
@@ -520,4 +472,4 @@ body h1 {
   }
 }
 
-/*# sourceMappingURL=PrivacyPolicy.css.map */
+/*# sourceMappingURL=policy.css.map */
