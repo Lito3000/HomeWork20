@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss-compile-all": "sass --watch ./src/style/scss/index.scss:./src/style/css/style.css",
-    "scss-compile-PrivacyPolicy": "sass --watch ./src/style/scss/policy.scss:./src/style/css/policy.css",
-    "scss-compile-HomePages": "sass --watch ./src/style/scss/home.scss:./src/style/css/home.css"
+    "scss-compile-policy": "sass --watch ./src/style/scss/policy.scss:./src/style/css/policy.css",
+    "scss-compile-home": "sass --watch ./src/style/scss/home.scss:./src/style/css/home.css"
   },
   "repository": {
     "type": "git",

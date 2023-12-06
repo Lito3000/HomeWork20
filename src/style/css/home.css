@@ -280,11 +280,11 @@ body {
   line-height: 1.2;
 }
 
-.default.black-text:hover {
-  color: black;
+.default.black-text.default:hover {
+  color: #2eacf3;
 }
-.default.black-text:hover:last-child {
-  color: black;
+.default.black-text:last-child {
+  color: #000;
 }
 
 .header.pos-absolut {
