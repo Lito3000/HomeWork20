@@ -2,8 +2,8 @@
 @use './../common/variables' as var;
 //@use './../../common/extends' as ext;
 
-body{
-  font-family: var.$main-font-family,  'sans-serif';
+body {
+  font-family: var.$main-font-family, 'sans-serif';
   color: var.$main-font-color;
   font-size: var.$font-md;
   font-weight: var.$font-regular;
@@ -11,18 +11,33 @@ body{
   line-height: 1.2;
 }
 
-body.background{
+.default.black-text{
+  &:hover {
+    color: black;
+
+    &:last-child {
+      color: black;
+    }
+  }
+}
+.header.pos-absolut {
+  position: unset;
+}
+
+body.background {
   background-color: var.$capital-background-color;
 }
-.container{
+
+.container {
   max-width: var.$container-width;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.flex-column{
+.flex-column {
   flex-direction: column;
 }
+
 .d-flex {
   display: flex;
 }
@@ -39,17 +54,17 @@ body.background{
   justify-content: space-between;
 }
 
-.flex-wrap-wrap{
+.flex-wrap-wrap {
   flex-wrap: wrap;
 }
 
 @media (max-width: var.$container-width) {
-  .container{
+  .container {
     max-width: 767px;
   }
 }
 
-h1{
+h1 {
   font-size: var.$font-xxl;
   font-weight: var.$font-medium;
 }
@@ -64,21 +79,21 @@ h1{
 }
 
 .btn-policy {
-  &:hover{
+  &:hover {
     background-color: royalblue;
   }
 }
 
-.btn-banner{
-  &:hover{
+.btn-banner {
+  &:hover {
     background-color: transparent;
     border-color: var.$additional-font-color;
   }
 }
 
 
-.btn-capital{
-  &:hover{
+.btn-capital {
+  &:hover {
     background-color: var.$main-font-color;
     border-color: var.$additional-font-color;
   }
@@ -101,10 +116,12 @@ a {
     }
   }
 }
-.colorsize{
+
+.colorsize {
   background-color: #6ad25d;
 }
-.btn__smSmall{
+
+.btn__smSmall {
   font-size: 42px;
   padding: 5px 10px;
 }
