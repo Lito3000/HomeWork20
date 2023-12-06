@@ -423,20 +423,16 @@ a.blue:hover {
 }
 
 .footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: #646466;
   font-family: Poppins, "sans-serif";
-  height: 358px;
-}
-.footer__menu {
-  gap: 30px;
-  padding-top: 60px;
 }
 .footer__left {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 30px;
+  row-gap: 20px;
 }
 .footer__left p {
   color: rgba(243, 243, 249, 0.76);
@@ -445,19 +441,23 @@ a.blue:hover {
 .footer__right {
   width: 50%;
   display: flex;
-  justify-content: right;
-  gap: 30px;
-  align-items: center;
+  row-gap: 20px;
+  flex-direction: column;
 }
 .footer__right p {
   color: rgba(243, 243, 249, 0.76);
   font-weight: 300;
 }
-.footer__email {
-  padding-top: 96px;
-  gap: 5px;
+.footer__inter {
   display: flex;
+  justify-content: right;
+  gap: 35px;
+}
+.footer__email {
+  display: flex;
+  align-items: end;
   flex-direction: column;
+  gap: 10px;
 }
 .footer__email a {
   color: #2eacf3;
