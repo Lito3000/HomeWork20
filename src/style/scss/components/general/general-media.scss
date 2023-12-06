@@ -4,12 +4,12 @@
 .general {
 
   @media (max-width: var.$br2) {
-      max-width: 767px;
+    max-width: 767px;
     display: flex;
-    &__menu{
+    &__menu {
       gap: 30px;
       display: flex;
       flex-direction: column;
     }
-    }
   }
+}

@@ -1,39 +1,26 @@
 @use './../../common/mixins' as mix;
 @use './../../common/variables' as var;
 //@use './../../common/extends' as *;
-.footer{
-  @media (max-width: var.$container-width) {
-    height: 1169px;
-    &__container{
-      max-width: 767px;
+.footer {
 
-    }
-
-  }
   @media (max-width: var.$br2) {
     max-height: 500px;
-    /* max-width: 50%; */
-    /* max-height: 358px; */
 
     &__left {
       display: flex;
       flex-direction: column;
-      /* flex-wrap: wrap; */
-      /* justify-content: center; */
       align-items: center;
       gap: 30px;
       padding-top: 25px;
     }
-    &__right{
+
+    &__right {
       flex-direction: column;
       align-items: center;
 
     }
 
-  }
-  @media (max-width: var.$br2) {
-    max-height: 500px;
-    &__email{
+    &__email {
       gap: 5px;
       display: flex;
       flex-direction: column;

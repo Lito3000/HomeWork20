@@ -387,13 +387,24 @@ a.blue:hover {
 .main__first {
   display: flex;
   flex-direction: column;
-  height: 1050px;
   justify-content: center;
   gap: 40px;
 }
 
 h1 {
   color: #000;
+}
+
+@media (max-width: 767px) {
+  .main {
+    max-width: 767px;
+    display: flex;
+  }
+  .main__menu {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer {
@@ -437,25 +448,13 @@ h1 {
   color: #2eacf3;
 }
 
-@media (max-width: 1200px) {
-  .footer {
-    height: 1169px;
-  }
-  .footer__container {
-    max-width: 767px;
-  }
-}
 @media (max-width: 767px) {
   .footer {
     max-height: 500px;
-    /* max-width: 50%; */
-    /* max-height: 358px; */
   }
   .footer__left {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
     align-items: center;
     gap: 30px;
     padding-top: 25px;
@@ -463,11 +462,6 @@ h1 {
   .footer__right {
     flex-direction: column;
     align-items: center;
-  }
-}
-@media (max-width: 767px) {
-  .footer {
-    max-height: 500px;
   }
   .footer__email {
     gap: 5px;

@@ -463,25 +463,13 @@ a.blue:hover {
   color: #2eacf3;
 }
 
-@media (max-width: 1200px) {
-  .footer {
-    height: 1169px;
-  }
-  .footer__container {
-    max-width: 767px;
-  }
-}
 @media (max-width: 767px) {
   .footer {
     max-height: 500px;
-    /* max-width: 50%; */
-    /* max-height: 358px; */
   }
   .footer__left {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
     align-items: center;
     gap: 30px;
     padding-top: 25px;
@@ -489,11 +477,6 @@ a.blue:hover {
   .footer__right {
     flex-direction: column;
     align-items: center;
-  }
-}
-@media (max-width: 767px) {
-  .footer {
-    max-height: 500px;
   }
   .footer__email {
     gap: 5px;
