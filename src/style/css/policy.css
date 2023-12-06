@@ -251,6 +251,9 @@ body {
 
 .header.pos-absolut {
   position: unset;
+  padding: 24px 0;
+  width: 100%;
+  max-height: 85px;
 }
 
 body.background {
@@ -343,12 +346,11 @@ a.blue:hover {
 }
 
 @media (max-width: 767px) {
-  .header {
+  .main {
     max-width: 767px;
     display: flex;
   }
-  .header__br2 {
-    flex-direction: column;
+  .main__first {
     align-items: center;
   }
 }
@@ -409,14 +411,13 @@ h1 {
 }
 
 @media (max-width: 767px) {
-  .main {
+  .header {
     max-width: 767px;
     display: flex;
   }
-  .main__menu {
-    gap: 30px;
-    display: flex;
+  .header__br2 {
     flex-direction: column;
+    align-items: center;
   }
 }
 
