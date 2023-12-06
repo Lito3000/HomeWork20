@@ -384,11 +384,12 @@ a.blue:hover {
 }
 
 @media (max-width: 767px) {
-  .main {
+  .header {
     max-width: 767px;
     display: flex;
   }
-  .main__first {
+  .header__br2 {
+    flex-direction: column;
     align-items: center;
   }
 }

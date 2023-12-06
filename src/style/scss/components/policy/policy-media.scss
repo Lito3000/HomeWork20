@@ -1,13 +1,12 @@
 @use './../../common/mixins' as mix;
 @use './../../common/variables' as var;
 //@use './../../common/extends' as *;
-.header {
+.main{
 
   @media (max-width: var.$br2) {
     max-width: 767px;
     display: flex;
-    &__br2 {
-      flex-direction: column;
+    &__first {
       align-items: center;
     }
   }
